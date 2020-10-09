@@ -1,18 +1,15 @@
 module.exports = {
   root: true,
-  parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module'
-  },
   env: {
-    browser: true,
-    node: true,
-    es6: true,
+    node: true
   },
-  extends: ['plugin:vue/recommended', 'eslint:recommended'],
-
-  // add your custom rules here
-  //it is base on https://github.com/vuejs/eslint-config-vue
+  'extends': [
+    'plugin:vue/essential',
+    'eslint:recommended'
+  ],
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
   rules: {
     "vue/max-attributes-per-line": [2, {
       "singleline": 10,
@@ -195,4 +192,8 @@ module.exports = {
     }],
     'array-bracket-spacing': [2, 'never']
   }
+  // rules: {
+  //   'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+  //   'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+  // }
 }
