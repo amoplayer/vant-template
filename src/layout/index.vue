@@ -22,7 +22,7 @@ export default {
     Fouter
   },
   created() {
-    console.log(process.env.VUE_APP_BASE_API);
+    console.log(process.env.VUE_APP_BASE_API)
   }
 }
 </script>
