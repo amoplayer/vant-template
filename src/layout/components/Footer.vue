@@ -1,6 +1,6 @@
 <template>
   <div>
-    <van-tabbar v-model="active">
+    <van-tabbar route>
       <van-tabbar-item icon="wap-home-o" to="/home">
         <span>首页</span>
       </van-tabbar-item>
@@ -20,7 +20,6 @@ Vue.use(TabbarItem)
 export default {
   data() {
     return {
-      active: 0
     }
   }
 }
