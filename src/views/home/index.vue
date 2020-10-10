@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
-    首页
+  <div>
+    <h1>首页</h1>
+    <van-button type="primary">主要按钮</van-button>
   </div>
 </template>
 
@@ -8,6 +9,7 @@
 // @ is an alias to /src
 import Vue from 'vue'
 import { Button } from 'vant'
+
 Vue.use(Button)
 
 export default {
