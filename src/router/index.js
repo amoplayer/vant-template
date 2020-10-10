@@ -11,17 +11,26 @@ const routes = [
       {
         path: '/my',
         name: 'my',
-        component: () => import('../views/my')
+        component: () => import('../views/my'),
+        meta: {
+          title: '我的'
+        }
       },
       {
         path: '/home',
         name: 'home',
-        component: () => import('../views/home')
+        component: () => import('../views/home'),
+        meta: {
+          title: '首页'
+        }
       },
       {
         path: '/order',
         name: 'order',
-        component: () => import('../views/order')
+        component: () => import('../views/order'),
+        meta: {
+          title: '预约'
+        }
       }
     ]
   }

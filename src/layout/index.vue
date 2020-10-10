@@ -14,9 +14,6 @@ export default {
   components: {
     AppMain,
     Footer
-  },
-  created() {
-    console.log(process.env.VUE_APP_BASE_API)
   }
 }
 </script>
